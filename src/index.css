@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#menu{
+  background-color: greenyellow;
+  padding: 20px;
+  font-size: 20px;
+}
+
+#menu a{
+  color: orangered;
+  padding-right: 50px;
+  font-weight: bold;
+}
+
+.margen{
+  margin: 100px;
+}
+
+.table{
+  width: 100%;
+  text-align: left;
+}
+
+.table td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
