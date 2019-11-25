@@ -1,7 +1,7 @@
 import { LIST, LOADING, ERROR } from "../types/usersTypes";
 const INITIAL_STATE = {
   users: [],
-  loading: true,
+  loading: false,
   error: ""
 };
 

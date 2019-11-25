@@ -5,7 +5,7 @@ export default function Menu() {
     return (
         <nav id="menu">
             <Link to="/">Usuarios</Link>
-            <Link to="/task">Tareas</Link>
+            <Link to="/tasks">Tareas</Link>
         </nav>
     )
 }

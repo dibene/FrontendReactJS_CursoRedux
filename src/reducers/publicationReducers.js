@@ -8,7 +8,7 @@ import {
 } from "../types/publicationsTypes";
 const INITIAL_STATE = {
   publications: [],
-  loading: true,
+  loading: false,
   loadingComments: false,
   error: "",
   errorComments: ""
