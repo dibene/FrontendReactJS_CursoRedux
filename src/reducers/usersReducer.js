@@ -1,12 +1,19 @@
+import { LIST, LOADING, ERROR } from "../types/usersTypes";
 const INITIAL_STATE = {
-    users: []
+  users: [],
+  loading: true,
+  error: ""
 };
 
 export default (state = INITIAL_STATE, action) => {
-    switch (action.type) {
-        case 'USER_LIST':
-            return { ...state, users: action.payload };
-        default:
-            return state;
-    }
-}
+  switch (action.type) {
+    case LIST:
+      return { ...state, users: action.payload, loading: false };
+    case LOADING:
+      return { ...state, loading: true };
+    case ERROR:
+      return { ...state, error: action.payload, loading: false };
+    default:
+      return state;
+  }
+};
